@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Interactive Chart.js Dashboard with CSV import, theme toggle, chart export, animations, and advanced data visualization.">
+  <meta name="keywords"
+    content="Chart.js, Interactive Dashboard, Data Visualization, CSV Import, Theme Toggle, Chart Export, SEO Dashboard">
+  <meta name="author" content="Your Name">
+  <meta name="robots" content="index, follow">
+  <title>Interactive Chart Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+
+<body>
+  <header role="banner">
+    <h1><i class="fas fa-chart-line" aria-hidden="true"></i> Interactive Chart Dashboard</h1>
+    
+    <label class="theme-switch" for="themeCheckbox">
+      <input type="checkbox" id="themeCheckbox" />
+      <span class="slider">
+        <i class="fas fa-sun icon sun"></i>
+        <i class="fas fa-moon icon moon"></i>
+      </span>
+    </label>
+    
+    
+  </header>
+
+  <main>
+    <section id="charts" aria-labelledby="charts-heading">
+      <!-- <h2 id="charts-heading"><i class="fas fa-chart-bar" aria-hidden="true"></i> Data Visualization</h2> -->
+      <div class="controls" role="toolbar" aria-label="Chart controls">
+        <button onclick="updateChart()" aria-label="Update chart data">
+          <i class="fas fa-sync-alt" aria-hidden="true"></i> Update Data
+        </button>
+        <button onclick="switchChartType()" aria-label="Switch chart type">
+          <i class="fas fa-random" aria-hidden="true"></i> Switch Type
+        </button>
+        <button onclick="downloadChart('png')" aria-label="Download chart as PNG">
+          <i class="fas fa-download" aria-hidden="true"></i> Download chart as PNG
+        </button>
+        <button onclick="downloadChart('pdf')" aria-label="Download chart as PDF">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i> Download chart as PDF
+        </button>
+        <input type="file" id="csvInput" accept=".csv" onchange="importCSV(event)" aria-label="Upload CSV file" />
+        <select id="chartTypeSelect" onchange="changeChartType()" aria-label="Select chart type">
+          <option value="bar">📊 Bar</option>
+          <option value="line">📈 Line</option>
+          <option value="pie">🥧 Pie</option>
+          <option value="doughnut">🍩 Doughnut</option>
+          <option value="radar">🧭 Radar</option>
+          <option value="polarArea">🧊 Polar Area</option>
+          <option value="bubble">🫧 Bubble</option>
+          <option value="scatter">📍 Scatter</option>
+        </select>
+
+        <button onclick="toggleFullscreen()" aria-label="Toggle fullscreen">
+          <i class="fas fa-expand" aria-hidden="true"></i> Fullscreen
+        </button>
+        
+      </div>
+
+
+      <div class="canvas-container">
+        <canvas id="myChart" aria-label="Data visualization chart" role="img"></canvas>
+        <div id="threeContainer" style="display: none;"></div>
+      </div>
+    </section>
+
+
+  </main>
+
+</body>
+
+</html>
