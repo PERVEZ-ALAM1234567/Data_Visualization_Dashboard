@@ -28,8 +28,8 @@ Built using the magic wand of **Chart.js** and sprinkled with sleek **JavaScript
 > "Kuch dashboards sirf kaam karte hain.  
 > Ye wala kaam bhi karta hai, aur dil bhi jeet leta hai!" 💖
 
-Aisa UI jisme speed bhi hai, simplicity bhi.  
-Aisi customization jisme power bhi hai, polish bhi.
+> Aisa UI jisme speed bhi hai, simplicity bhi.  
+> Aisi customization jisme power bhi hai, polish bhi.
 
 A user interface that combines speed with simplicity.  
 Customization that balances power with polish.
@@ -80,7 +80,7 @@ Present, share, explore, analyze — all in style.
 ---
 
 ## 👑 Author 
-**🧑‍💻 PERVEZ ALAM**  
+## 🧑‍💻 **PERVEZ ALAM**  
 
 ---
 
@@ -92,7 +92,7 @@ Present, share, explore, analyze — all in style.
 
 ## 💬 Final Thoughts
 
- "Charts itne ache lag rahe hain, data ko khud pe fakr ho raha hoga!" 😂  
+>  "Charts itne ache lag rahe hain, data ko khud pe fakr ho raha hoga!" 😂  
 
 If this dashboard impressed you (and let’s be honest — how could it not?),  drop a ⭐, fork it, and make something amazing out of it.  
 
