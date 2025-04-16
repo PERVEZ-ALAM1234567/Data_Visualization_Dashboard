@@ -73,14 +73,13 @@ No npm, no webpack, no stress. Only open and enjoy.
 ---
 
 ## ✨ Vision
-
 This isn’t just a dashboard.  
 It’s your data’s stage, and your charts are the stars. 🌟  
 Present, share, explore, analyze — all in style.
 
 ---
 
-## 👑 Author -
+## 👑 Author 
 **🧑‍💻 PERVEZ ALAM**  
 
 ---
