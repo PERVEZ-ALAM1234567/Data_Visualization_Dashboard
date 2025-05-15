@@ -80,10 +80,8 @@ Present, share, explore, analyze — all in style.
 ---
 
 ## 👑 Author 
-## 🧑‍💻 **PERVEZ ALAM**  
 
----
-
+## 🧑‍💻Name - **PERVEZ ALAM**  
 📂 GitHub - [https://github.com/PERVEZ-ALAM1234567](https://github.com/PERVEZ-ALAM1234567)  
 ✉️ E-mail - pervezalam1234567@gmail.com  
 🔗 LinkedIn - [http://www.linkedin.com/in/pervez-alam1](http://www.linkedin.com/in/pervez-alam1)
